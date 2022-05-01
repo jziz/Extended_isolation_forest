@@ -12,7 +12,7 @@ Scores = anomaly_scores(Z,100,forest,256);
 
 Scores=rescale(Scores); %rescale between 0 and 1
 
-Z_out=Z(Scores>0.6,:); %soglia 0.6 esempio
+Z_out=Z(Scores>0.6,:); %Example threshold 0.6
 figure
 scatter(Z(:,1),Z(:,2));
 hold on
